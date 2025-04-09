@@ -29,3 +29,6 @@ jobs:
         ls -la build/
         # Verify build files exist
         test -f build/index.html && echo "Build successful" || echo "Build failed: index.html not found"
+
+    - name: Skip deployment
+      run: echo "Deployment is handled by Azure App Service"
