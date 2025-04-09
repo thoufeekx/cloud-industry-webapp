@@ -1,4 +1,4 @@
-name: Build and Push Code
+name: Build Code
 
 on:
   push:
@@ -21,4 +21,4 @@ jobs:
       run: npm ci
 
     - name: Build
-      run: npm run build
+      run: npm run build --if-present
