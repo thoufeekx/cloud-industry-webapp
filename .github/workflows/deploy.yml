@@ -22,3 +22,12 @@ jobs:
 
     - name: Build
       run: npm run build
+
+    - name: Prepare build output
+      run: |
+        # Clean up any existing build directory
+        rm -rf build
+        # Rebuild the project
+        npm run build
+        # List contents of build directory
+        ls -la build/
