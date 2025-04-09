@@ -23,7 +23,7 @@ jobs:
     - name: Build
       run: npm run build
 
-    - name: Verify build output
+    - name: Verify build
       run: |
         # List contents of build directory
         ls -la build/
